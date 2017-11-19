@@ -5,8 +5,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import nyc.c4q.fragmentstesting.Fragments.ButtonFragment;
-import nyc.c4q.fragmentstesting.Fragments.MainFragment;
+import com.nyc.fragments.fragments.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -2,15 +2,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.nyc.fragments.fragments.MainFragment">
 
-    <TextView
-        android:id="@+id/main_fragment_textview"
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/fragment_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is the Main Fragment"
-        android:textSize="50sp"
-        android:layout_gravity="center"
-        android:gravity="center"/>
+        android:textSize="14sp"
+        android:text="Fragment One"
+        android:layout_marginTop="60dp"/>
+    <Button
+        android:id="@+id/fragment_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_gravity="end"
+        android:text="Fragment One"
+        android:layout_marginTop="60dp"/>
+    <Button
+        android:id="@+id/fragment_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Fragment One"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/fragment_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Fragment One"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"/>
+    <Button
+        android:id="@+id/fragment_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_gravity="bottom|end"
+        android:text="Fragment One"
+        android:layout_marginBottom="30dp"/>
+
 
 </FrameLayout>
