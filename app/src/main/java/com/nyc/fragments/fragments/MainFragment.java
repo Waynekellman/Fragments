@@ -48,7 +48,22 @@ public class MainFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putString("fragmentOne", editTextContents);
                 buttonOneFragment.setArguments(bundle);
-                fragmentTransaction.replace(R.id.main_container, buttonOneFragment).addToBackStack("fragment 1").addToBackStack("FragmentOne");
+                fragmentTransaction.replace(R.id.main_container, buttonOneFragment).addToBackStack("FragmentOne");
+                fragmentTransaction.commit();
+
+            }
+        });
+        fragmentTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ButtonTwoFragment buttonTwoFragment = new ButtonTwoFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                String editTextContents = editText.getText().toString();
+                Bundle bundle = new Bundle();
+                bundle.putString("fragmentTwo", editTextContents);
+                buttonTwoFragment.setArguments(bundle);
+                fragmentTransaction.replace(R.id.main_container, buttonTwoFragment).addToBackStack("FragmentTwo");
                 fragmentTransaction.commit();
 
             }
