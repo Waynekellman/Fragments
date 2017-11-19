@@ -68,6 +68,21 @@ public class MainFragment extends Fragment {
 
             }
         });
+        fragmentThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ButtonThreeFragment buttonThreeFragment = new ButtonThreeFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                String editTextContents = editText.getText().toString();
+                Bundle bundle = new Bundle();
+                bundle.putString("fragmentThree", editTextContents);
+                buttonThreeFragment.setArguments(bundle);
+                fragmentTransaction.replace(R.id.main_container, buttonThreeFragment).addToBackStack("FragmentThree");
+                fragmentTransaction.commit();
+
+            }
+        });
         return rootView;
     }
 
